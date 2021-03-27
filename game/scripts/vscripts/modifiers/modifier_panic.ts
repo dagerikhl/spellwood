@@ -12,6 +12,8 @@ class ModifierSpeed extends BaseModifier {
   }
 }
 
+export const MODIFIER_PANIC_SPEED = 540;
+
 @registerModifier()
 export class modifier_panic extends ModifierSpeed {
   // Set state
@@ -23,7 +25,7 @@ export class modifier_panic extends ModifierSpeed {
 
   // Override speed given by Modifier_Speed
   GetModifierMoveSpeed_Absolute(): number {
-    return 540;
+    return MODIFIER_PANIC_SPEED;
   }
 
   // Run when modifier instance is created

@@ -1,0 +1,22 @@
+"lang"
+{
+    "Language"    "english"
+    "Tokens"
+    {
+        "Hello"    "test"
+        "watcher_test"    "This should be automatically added"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt"    "Custom Arcane Bolt"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_description"    "Custom version of Skywrath Mage's Arcane Bolt. Fires a tracking bolt at a target, doing %bolt_damage% + %int_multiplier%*Intelligence damage. Provides bonus vision around projectile."
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Lore"    "Legend has it it was coded late one night fueled by red wine."
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Note0"    "My personal note"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_scepter_description"    "I don't think it has any scepter effect."
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_shard_description"    "I don't think it has any shard effect."
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_bolt_damage"    "DAMAGE"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_int_multiplier"    "INTELLIGENCE MULTIPLIER"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_bolt_speed"    "PROJECTILE SPEED"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_bolt_vision"    "VISION RADIUS"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_vision_duration"    "VISION DURATION"
+        "DOTA_Tooltip_modifier_panic"    "Panic"
+        "DOTA_Tooltip_modifier_panic_description"    "This unit is panicked! Movespeed increased to 540."
+    }
+}

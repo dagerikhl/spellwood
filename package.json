@@ -33,6 +33,10 @@
     "dev": "run-p dev:*",
     "dev:panorama": "tsc --project content/panorama/scripts/custom_game/tsconfig.json --watch",
     "dev:vscripts": "tstl --project game/scripts/vscripts/tsconfig.json --watch",
+    "dev:localizationCompiler": "tsc --project node_modules/~resource/tsconfig.json",
+    "dev:localizationCompilerWatcher": "tsc --project node_modules/~resource/tsconfig.json --watch",
+    "dev:runlocalizationWatcher": "node node_modules/~generator/fsWatcher.js",
+    "init": "link-module-alias && node node_modules/~generator/init.js",
     "release": "standard-version"
   },
   "devDependencies": {
@@ -40,18 +44,28 @@
     "@commitlint/config-conventional": "12.0.1",
     "@moddota/dota-lua-types": "4.7.2",
     "@moddota/panorama-types": "1.6.1",
+    "@shushishtok/tooltip_generator": "1.5.6",
+    "@types/node": "14.14.22",
     "find-steam-app": "1.0.2",
     "fs-extra": "9.0.0",
     "husky": "5.2.0",
+    "link-module-alias": "1.2.0",
+    "node-watch": "0.7.1",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
     "standard-version": "9.1.1",
+    "ts-node": "9.1.1",
     "typescript": "3.9.3",
-    "typescript-to-lua": "0.34.0"
+    "typescript-to-lua": "0.34.0",
+    "valve-kv": "1.1.0"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "_moduleAliases": {
+    "~resource": "game/resource",
+    "~generator": "node_modules/@shushishtok/tooltip_generator"
   }
 }

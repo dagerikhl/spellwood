@@ -15,15 +15,8 @@ Guide can be found here, at the [TypeScript introduction](https://moddota.com/sc
 After you've followed these steps, and you want to use my repo, clone my repo instead of ModDota's. Then continue with the following steps:
 
 1. Clone this repo to your computer.
-2. Move contents of `content` and `game` folder to `<disc>:\...\steamapps\common\dota 2 beta\<content|game>\dota_addons\<your app name>\<content|game>`.
-3. Make symbolic hard links to your now moved folders in your git repo folder (where you cloned your repo) using command prompt (CMD) as an administrator (not 100 % sure about the administrator requirement):
-
-```cmd
-mklink /J content "<your path to your DotA 2 folder>\content\<your app name>"
-mklink /J game "<your path to your DotA 2 folder>\game\<your app name>"
-```
-
-4. Open your repo in your favourite editor, and start coding!
+   - Normally, you would make hard links to folders in your DotA 2 folder, but this repo comes with a postinstall script that fixes that for you!
+2. Open your repo in your favourite editor, and start coding!
    - I recommend IntelliJ for LUA coding.
      - Remember to istall some LUA plugin in IntelliJ, I use EmmyLua.
    - I recommend Sublime Text for Key-Value text files.

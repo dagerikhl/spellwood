@@ -67,7 +67,7 @@ export const registerModifier = (name?: string) => (modifier: new () => CDOTA_Mo
   }
 
   const [env, source] = getFileScope();
-  const [fileName] = string.gsub(source, ".*scripts[\\/]vscripts[\\/]", "");
+  const fileName = (string.gsub(source, ".*scripts[\\]vscripts[\\/]", "") as unknown) as string;
 
   if (env[name]) {
     clearTable(env[name]);

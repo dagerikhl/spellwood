@@ -1,5 +1,34 @@
 # ModDota template
 
+## Changes to original template
+
+- Use [Yarn](https://yarnpkg.com/) instead of NPM, it's way faster.
+
+## Basic setup for app (if I'm so lucky that someone has forked my repo <3)
+
+_Disclaimer: I'm writing this on Windows. If you're on another OS, pleace reach out to me at [dagerikl@gmail.com](mailto:dagerikl@gmail.com)._
+
+For first steps, consult the [TypeScript DotA 2 template](https://github.com/ModDota/TypeScriptAddonTemplate)
+
+Guide can be found here: https://moddota.com/scripting/Typescript/typescript-introduction
+
+After you've followed these steps, and you want to use my repo, clone my repo insteaqd of ModDota's. Then contineu with the following steps:
+
+1. Clone this repo to your computer.
+2. Move contents of `content` and `game` folder to `<DISK>:\...\steamapps\common\dota 2 beta\<content|game>\dota_addons\<your app name>\<content|game>`.
+3. Make symbolic hard links to your, now moved folders, in your git repo folder (where you cloned your repo) (using command prompt (CMD) as an administrator (I tink):
+
+```cmd
+mklink /J content "<your path to your DotA 2 game folder>\content\<your app name>"
+mklink /J game "<your path to your DotA 2 game folder>\game\<your app name>"
+```
+
+4. Open your repo in your favourite editor, and start coding!
+   - I recommend IntelliJ for LUA coding (remember to istall some LUA plugin in IntelliJ).
+   - I recommend Sublime Text for Key-Value text files.
+
+## Original README from clone
+
 A template for Dota 2 Custom Games built with modern technologies. It includes
 
 - [TypeScript for Panorama](https://moddota.com/panorama/introduction-to-panorama-ui-with-typescript)

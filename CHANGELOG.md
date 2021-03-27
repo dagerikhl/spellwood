@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/dagerikhl/spellwood/compare/v0.1.5...v0.1.6) (2021-03-27)
+
+
+### Features
+
+* **abilities:** add custom skywrath mage arcane bolt ability ([5d46391](https://github.com/dagerikhl/spellwood/commit/5d46391a0532becba0b4d89f44da4898b47a34dd))
+* **localization:** add localization and tooltip generator ([950eee3](https://github.com/dagerikhl/spellwood/commit/950eee3d982476b7988f8ee33d7d956a5e11b86f))
+* **map:** add initial dummy map ([dff3dbf](https://github.com/dagerikhl/spellwood/commit/dff3dbf430238c3e4a571fce19c7a069ee99911b))
+* **types:** change to normalized dota 2 types ([5bef353](https://github.com/dagerikhl/spellwood/commit/5bef35310a40224cb2feefeca2bf49e11fcd004b))
+
 ### [0.1.5](https://github.com/dagerikhl/spellwood/compare/v0.1.4...v0.1.5) (2021-03-27)
 
 

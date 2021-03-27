@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/dagerikhl/spellwood/compare/v0.1.3...v0.1.4) (2021-03-27)
+
+
+### Bug Fixes
+
+* **app:** use exact versions for all deps, add to yarnrc ([56314cc](https://github.com/dagerikhl/spellwood/commit/56314cc1cd0dbdbccd827d2720ad22e9feab3053))
+
 ### [0.1.3](https://github.com/dagerikhl/spellwood/compare/v0.1.2...v0.1.3) (2021-03-27)
 
 ### [0.1.2](https://github.com/dagerikhl/spellwood/compare/v0.1.1...v0.1.2) (2021-03-27)

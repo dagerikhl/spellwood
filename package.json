@@ -10,12 +10,13 @@
     "hero defence",
     "hero defense"
   ],
-  "homepage": "https://github.com/dagerikhl/spellwood",
+  "license": "MIT",
   "author": {
     "email": "dagerikhl@gmail.com",
     "name": "Dag Erik Løvgren",
     "url": "https://github.com/dagerikhl"
   },
+  "homepage": "https://github.com/dagerikhl/spellwood",
   "repository": {
     "url": "https://github.com/dagerikhl/spellwood",
     "type": "git"

@@ -21,3 +21,6 @@ panorama_debugger.cfg
 
 # Editors
 .idea/
+
+# Yarn
+yarn-error.log

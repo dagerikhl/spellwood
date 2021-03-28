@@ -1,5 +1,5 @@
-#base "heroes/meepo.kv"
-#base "heroes/skywrath_mage.kv"
+#base "abilities/heroes/meepo.kv"
+#base "abilities/heroes/skywrath_mage.kv"
 
 "DOTAAbilities"
 {

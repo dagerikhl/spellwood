@@ -7,6 +7,8 @@ const commandLineArgs = process.argv.slice(2);
 
 const addonName = getAddonName();
 
+// TODO This doesn't work as expected, I can't launche the map and the map is not automatically started
+
 (async () => {
   const dotaPath = await getDotaPath();
   const win64 = path.join(dotaPath, "game", "bin", "win64");

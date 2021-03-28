@@ -1,0 +1,6 @@
+#base "units/dummy_unit.kv"
+
+"DOTAUnits"
+{
+  "Version" "1"
+}

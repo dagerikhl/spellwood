@@ -21,7 +21,7 @@ const addonName = getAddonName();
     "-novid",
     "-tools",
     `-addon ${addonName}`,
-    // `-dota_launch_custom_game ${addonName} ${addonName}`,
+    `-dota_launch_custom_game ${addonName} ${addonName}`,
     ...commandLineArgs,
   ];
   console.log(`Launching game with args \`${args.join(" ")}\``);

@@ -1,5 +1,6 @@
 import { BaseAbility, registerAbility } from "../../../lib/dota_ts_adapter";
 
+// TODO Remove example ability
 @registerAbility()
 export class typescript_skywrath_mage_arcane_bolt extends BaseAbility {
   sound_cast = "Hero_SkywrathMage.ArcaneBolt.Cast";

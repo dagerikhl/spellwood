@@ -1,5 +1,6 @@
 import { BaseAbility, registerAbility } from "../../../lib/dota_ts_adapter";
 
+// TODO Remove example ability
 @registerAbility()
 export class meepo_earthbind_ts_example extends BaseAbility {
   particle?: ParticleID;

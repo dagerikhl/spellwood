@@ -1,4 +1,6 @@
-# ModDota template
+# Spellwood
+
+DotA 2 hero defence mod
 
 ## Changes to original template
 
@@ -6,7 +8,7 @@
 
 ## Basic setup for app (if I'm so lucky that someone has forked my repo <3)
 
-_Disclaimer: I'm writing this on Windows. If you're on another OS, pleace reach out to me at [dagerikhl@gmail.com](mailto:dagerikhl@gmail.com)._
+_Disclaimer: I'm writing this on Windows. If you're on another OS, pleace post an issue on [this repo's GitHub Issues page](https://github.com/dagerikhl/spellwood/issues)._
 
 For first steps, consult the [TypeScript DotA 2 template](https://github.com/ModDota/TypeScriptAddonTemplate)
 
@@ -22,7 +24,14 @@ After you've followed these steps, and you want to use my repo, clone my repo in
    - I recommend Sublime Text for Key-Value text files.
      - Remember to install plugins to work with DotA KV files, I use dota_kv.
 
-## Original README from cloned repo
+## Contributors
+
+- Spellwood author: [dagerikhl](https://github.com/dagerikhl)
+- Template author: [ModDota](https://github.com/ModDota)
+
+## Original README from template repo
+
+Slight modifications have been made.
 
 A template for Dota 2 Custom Games built with modern technologies. It includes
 

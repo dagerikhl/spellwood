@@ -3,12 +3,12 @@
     "Language"    "norwegian"
     "Tokens"
     {
-        "Hello"    "test"
-        "watcher_test"    "This should be automatically added"
+        "Hello"    "Hallo verden!"
+        "watcher_test"    "Dette burde bli automatisk lagt til"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt"    "Egenlagd Arkan Bolt"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_description"    "Egenlagd versjon av Skywrath Mage's Arkan Bolt. Skyter ut en sporende bolt mot et mål, som gjør %bolt_damage% + %int_multiplier%*Intelligens skade. Gir ekstra lys rundt prosjektilet."
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Lore"    "Det heter seg at denne ble kodet en sen kveld hjulpet av mye rødvin."
-        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Note0"    "Mitt personlige notat"
+        "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Note0"    "Mitt personlige notat."
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_scepter_description"    "Jeg tror ikke denne har noen septereffekt."
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_shard_description"    "Jeg tror ikke denne har noen shardeffekt."
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_bolt_damage"    "SKADE"
@@ -16,7 +16,7 @@
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_bolt_speed"    "PROSJEKTILFART"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_bolt_vision"    "LYSRADIUS"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_vision_duration"    "LYSVARIGHET"
-        "DOTA_Tooltip_modifier_panic"    "Panic"
-        "DOTA_Tooltip_modifier_panic_description"    "This unit is panicked! Movespeed increased to 540."
+        "DOTA_Tooltip_modifier_panic"    "Panikk"
+        "DOTA_Tooltip_modifier_panic_description"    "Denne enheten har panikk! Bevegelseshastighet økt til 540."
     }
 }

@@ -1,31 +1,10 @@
-import {
-  AbilityLocalization,
-  LocalizationData,
-  ModifierLocalization,
-  StandardLocalization,
-} from "~generator/localizationInterfaces";
+import { AbilityLocalization } from "~generator/localizationInterfaces";
+
 import { Language } from "../languages";
 
-export function GenerateLocalizationData(): LocalizationData {
-  // This section can be safely ignored, as it is only logic.
-  //#region Localization logic
-  // Arrays
-  const Abilities: Array<AbilityLocalization> = new Array<AbilityLocalization>();
-  const Modifiers: Array<ModifierLocalization> = new Array<ModifierLocalization>();
-  const StandardTooltips: Array<StandardLocalization> = new Array<StandardLocalization>();
-
-  // Create object of arrays
-  const localization_info: LocalizationData = {
-    AbilityArray: Abilities,
-    ModifierArray: Modifiers,
-    StandardArray: StandardTooltips,
-  };
-  //#endregion
-
-  // Enter localization data below!
-
-  // Abilities
-  Abilities.push({
+const heroAbilityTooltips: AbilityLocalization[] = [
+  // TODO Remove example
+  {
     ability_classname: "typescript_skywrath_mage_arcane_bolt",
     name: "Custom Arcane Bolt",
     description:
@@ -33,7 +12,7 @@ export function GenerateLocalizationData(): LocalizationData {
     lore: "Legend has it it was coded late one night fueled by red wine.",
     scepter_description: "I don't think it has any scepter effect.",
     shard_description: "I don't think it has any shard effect.",
-    notes: ["My personal note"],
+    notes: ["My personal note."],
     ability_specials: [
       {
         ability_special: "bolt_damage",
@@ -65,7 +44,7 @@ export function GenerateLocalizationData(): LocalizationData {
         lore_override: "Det heter seg at denne ble kodet en sen kveld hjulpet av mye rødvin.",
         scepter_description_override: "Jeg tror ikke denne har noen septereffekt.",
         shard_description_override: "Jeg tror ikke denne har noen shardeffekt.",
-        notes_override: ["Mitt personlige notat"],
+        notes_override: ["Mitt personlige notat."],
         ability_specials_override: [
           {
             ability_special: "bolt_damage",
@@ -90,26 +69,7 @@ export function GenerateLocalizationData(): LocalizationData {
         ],
       },
     ],
-  });
+  },
+];
 
-  // Modifiers
-  Modifiers.push({
-    modifier_classname: "modifier_panic",
-    name: "Panic",
-    description: "This unit is panicked! Movespeed increased to 540.",
-  });
-
-  // Standard tooltips
-  // TODO Remove test tooltips
-  StandardTooltips.push({
-    classname: "Hello",
-    name: "test",
-  });
-  StandardTooltips.push({
-    classname: "watcher_test",
-    name: "This should be automatically added",
-  });
-
-  // Return data to compiler
-  return localization_info;
-}
+export const abilityTooltips: AbilityLocalization[] = [...heroAbilityTooltips];

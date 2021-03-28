@@ -67,9 +67,9 @@ export class GameMode {
     // After a hero unit spawns, apply modifier_panic for 8 seconds
     const unit = EntIndexToHScript(event.entindex) as CDOTA_BaseNPC; // Cast to npc since this is the 'npc_spawned' event
     // if (unit.IsRealHero()) {
-    // Timers.CreateTimer(1, () => {
-    //   unit.AddNewModifier(unit, undefined, "modifier_panic", { duration: 5 });
-    // });
+    Timers.CreateTimer(1, () => {
+      unit.AddNewModifier(unit, undefined, "modifier_panic", { duration: 5 });
+    });
 
     // if (!unit.HasAbility("meepo_earthbind_ts_example")) {
     //   // Add lua ability to the unit

@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/dagerikhl/spellwood/compare/v0.1.6...v0.1.7) (2021-03-29)
+
+
+### Features
+
+* **kv:** add js to kv transpiler, fix heroes ([c26383d](https://github.com/dagerikhl/spellwood/commit/c26383d2651e1a99e9196ca4f35a19aba7f392b9))
+* reset map to a simple mat, start on custom hero ([46fbd19](https://github.com/dagerikhl/spellwood/commit/46fbd19712e47b93ecaee4162b8264b829e5e26b))
+
 ### [0.1.6](https://github.com/dagerikhl/spellwood/compare/v0.1.5...v0.1.6) (2021-03-27)
 
 

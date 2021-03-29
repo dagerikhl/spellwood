@@ -3,6 +3,14 @@ import { StandardLocalization } from "~generator/localizationInterfaces";
 import { Language } from "../languages";
 
 export const standardTooltips: StandardLocalization[] = [
+  {
+    classname: "npc_dota_hero_tester",
+    name: "TESTER",
+  },
+  {
+    classname: "npc_dota_hero_warder",
+    name: "Warder",
+  },
   // TODO Remove examples
   {
     classname: "Hello",

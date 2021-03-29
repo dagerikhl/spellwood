@@ -3,6 +3,8 @@
     "Language"    "norwegian"
     "Tokens"
     {
+        "npc_dota_hero_tester"    "TESTER"
+        "npc_dota_hero_warder"    "Warder"
         "Hello"    "Hallo verden!"
         "watcher_test"    "Dette burde bli automatisk lagt til"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt"    "Egenlagd Arkan Bolt"

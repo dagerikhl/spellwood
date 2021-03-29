@@ -3,6 +3,8 @@
     "Language"    "english"
     "Tokens"
     {
+        "npc_dota_hero_tester"    "TESTER"
+        "npc_dota_hero_warder"    "Warder"
         "Hello"    "Hello world!"
         "watcher_test"    "This should be automatically added"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt"    "Custom Arcane Bolt"

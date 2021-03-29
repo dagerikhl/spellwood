@@ -9,6 +9,10 @@ import { abilityTooltips } from "./abilityTooltips";
 import { modifierTooltips } from "./modifierTooltips";
 import { standardTooltips } from "./standardTooltips";
 
+// Don't remove this, it's needed for the tooltip generator to work
+// noinspection ES6UnusedImports
+import { Language } from "../languages";
+
 export function GenerateLocalizationData(): LocalizationData {
   // This section can be safely ignored, as it is only logic
   //#region Localization logic

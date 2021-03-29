@@ -19,8 +19,11 @@ node_modules
 *.vsnd_c
 panorama_debugger.cfg
 
-# Transpiles JS localization files
+# Transpiled JS localization files
 /game/resource/**/*.js
+
+# Transpiled JS to KV files
+/game/scripts/**/*.txt
 
 # Editors
 .idea/

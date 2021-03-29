@@ -1,5 +1,0 @@
-"CustomHeroList"
-{
-    "npc_dota_hero_tester"    "1"
-    "npc_dota_hero_warder"    "1"
-}

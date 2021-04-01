@@ -1,7 +1,4 @@
-//
-// <key>  <value>
-// Hero   currently on/off, will be # of instances (-1 = infinite)
-//
+// Currently on/off, 1 = on, 0 = off, will be # of instances (-1 = infinite)?
 
 module.exports = {
   CustomHeroList: {

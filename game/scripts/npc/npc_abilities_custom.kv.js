@@ -7,7 +7,11 @@ const meepo_earthbind_ts_example = {
   BaseClass: "ability_lua",
   ScriptFile: "abilities/heroes/meepo/earthbind_ts_example.lua",
   AbilityTextureName: "meepo_earthbind",
-  AbilityBehavior: "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+  AbilityBehavior: [
+    "DOTA_ABILITY_BEHAVIOR_AOE",
+    "DOTA_ABILITY_BEHAVIOR_POINT",
+    "DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+  ].join(" | "),
   SpellImmunityType: "SPELL_IMMUNITY_ENEMIES_NO",
   SpellDispellableType: "SPELL_DISPELLABLE_YES",
   FightRecapLevel: 1,
@@ -16,7 +20,7 @@ const meepo_earthbind_ts_example = {
   // Casting
   //-------------------------------------------------------------------------------------------------------------
   AbilityCastRange: 1250,
-  AbilityCastPoint: "0.3",
+  AbilityCastPoint: 0.3,
 
   // Time
   //-------------------------------------------------------------------------------------------------------------
@@ -67,7 +71,7 @@ const typescript_skywrath_mage_arcane_bolt = {
   ScriptFile: "abilities/heroes/skywrath_mage/typescript_skywrath_mage_arcane_bolt",
   AbilityBehavior: "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
   AbilityUnitTargetTeam: "DOTA_UNIT_TARGET_TEAM_ENEMY",
-  AbilityUnitTargetType: "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+  AbilityUnitTargetType: ["DOTA_UNIT_TARGET_HERO", "DOTA_UNIT_TARGET_BASIC"].join(" | "),
   AbilityUnitDamageType: "DAMAGE_TYPE_MAGICAL",
   SpellImmunityType: "SPELL_IMMUNITY_ENEMIES_NO",
   FightRecapLevel: 1,
@@ -76,11 +80,11 @@ const typescript_skywrath_mage_arcane_bolt = {
   // Casting
   //-------------------------------------------------------------------------------------------------------------
   AbilityCastRange: 875,
-  AbilityCastPoint: "0.1 0.1 0.1 0.1",
+  AbilityCastPoint: [0.1, 0.1, 0.1, 0.1].join(" "),
 
   // Time
   //-------------------------------------------------------------------------------------------------------------
-  AbilityCooldown: "5.0 4.0 3.0 2.0",
+  AbilityCooldown: [5, 4, 3, 2].join(" "),
 
   // Cost
   //-------------------------------------------------------------------------------------------------------------
@@ -101,7 +105,7 @@ const typescript_skywrath_mage_arcane_bolt = {
 
     "03": {
       var_type: "FIELD_FLOAT",
-      bolt_damage: "60 80 100 120",
+      bolt_damage: [60, 80, 100, 120].join(" "),
     },
 
     "04": {

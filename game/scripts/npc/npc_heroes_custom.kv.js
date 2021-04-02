@@ -1,215 +1,204 @@
+//===============================================================================================================
+// HERO: TESTER
+//===============================================================================================================
+// TODO Customize this to a sensible tester hero, and add description overriding Io's
 const npc_dota_hero_tester = {
-  override_hero: "npc_dota_hero_axe",
+  // Override
+  //-------------------------------------------------------------------------------------------------------------
+  override_hero: "npc_dota_hero_wisp",
 
   // General
   //-------------------------------------------------------------------------------------------------------------
-  Model: "models/heroes/axe/axe.vmdl",
-  SoundSet: "Hero_Axe",
-  PickSound: "axe_axe_spawn_01",
-  BanSound: "axe_axe_anger_01",
-  Enabled: 1,
-  HeroUnlockOrder: 2,
-  HeroPool1: 1,
-  HeroPool2: 1,
-  Role: ["Initiator", "Durable", "Disabler", "Jungler", "Carry"].join(","),
-  Rolelevels: [3, 3, 2, 2, 1].join(","),
-  Complexity: 1,
-  Team: "Bad",
-  HeroID: 2,
-  HeroOrderID: 2,
-  BotImplemented: 1,
-  ModelScale: 1.0,
-  VersusScale: 0.89,
-  LoadoutScale: 0.95,
-  SpectatorLoadoutScale: 0.85,
-  HeroGlowColor: [222, 60, 36].join(","),
-  CMEnabled: 1,
-  workshop_guide_name: "Tester",
-  new_player_enable: 1,
-  SimilarHeroes: [96, 16, 104].join(","),
-  LastHitChallengeRival: "npc_dota_hero_juggernaut",
-  HeroSelectSoundEffect: "Hero_Axe.Pick",
-  GibType: "default",
-  Ability1: "typescript_skywrath_mage_arcane_bolt",
-  Ability2: "",
-  Ability3: "",
-  Ability4: "",
-  Ability5: "",
-  Ability6: "",
-  Ability10: "",
-  Ability11: "",
-  Ability12: "",
-  Ability13: "",
-  Ability14: "",
-  Ability15: "",
-  Ability16: "",
-  Ability17: "",
-  ArmorPhysical: -1,
-  AttackCapabilities: "DOTA_UNIT_CAP_MELEE_ATTACK",
-  AttackDamageMin: 27,
-  AttackDamageMax: 31,
-  AttackRate: 1.7,
-  AttackAnimationPoint: 0.5,
-  AttackAcquisitionRange: 600,
-  AttackRange: 150,
-  AttackSpeedActivityModifiers: {
-    fast: 170,
-  },
+  Model: "models/heroes/wisp/wisp.vmdl",
+  ModelScale: "0.930000",
+  VersusScale: "0.770000",
+  Enabled: "1",
+  Level: "1",
+  BotImplemented: "0",
+  Team: "Good",
+  HeroID: "91",
+  HeroOrderID: "83",
+  NewHero: "0",
+  HeroPool1: "0",
+  HeroUnlockOrder: "1",
+  CMEnabled: "0",
+  CMTournamentIgnore: "0",
+  new_player_enable: "0",
+  Role: "Support,Escape,Nuker",
+  Rolelevels: "3,2,1",
+  Complexity: "3",
+  workshop_guide_name: "Io",
+  PickSound: "wisp_move03",
+  BanSound: "wisp_shitty_crummy_wizard",
+  SimilarHeroes: "50,57,111",
+  NameAliases: "wisp",
+  NoCombine: "1",
+  Legs: "0",
+  LastHitChallengeRival: "npc_dota_hero_zuus",
+  AbilityDraftDisabled: "0",
+  AbilityDraftIgnoreCount: "8",
+  GibType: "ethereal",
+  GibTintColor: "171 230 255 255",
+
+  // Abilities
+  //-------------------------------------------------------------------------------------------------------------
+  Ability1: "wisp_tether",
+  Ability2: "wisp_spirits",
+  Ability3: "wisp_overcharge",
+  Ability4: "wisp_spirits_in",
+  Ability5: "wisp_spirits_out",
+  Ability6: "wisp_relocate",
+  Ability7: "wisp_tether_break",
+  Ability10: "special_bonus_hp_regen_4",
+  Ability11: "special_bonus_attack_damage_35",
+  Ability12: "special_bonus_unique_wisp_3",
+  Ability13: "special_bonus_spell_lifesteal_10",
+  Ability14: "special_bonus_unique_wisp",
+  Ability15: "special_bonus_unique_wisp_6",
+  Ability16: "special_bonus_hp_700",
+  Ability17: "special_bonus_unique_wisp_4",
+
+  AbilityTalentStart: "10",
+
+  // Armor
+  //-------------------------------------------------------------------------------------------------------------
+  ArmorPhysical: "1",
+  MagicalResistance: "25",
+
+  // Attack
+  //-------------------------------------------------------------------------------------------------------------
+  AttackDamageType: "DAMAGE_TYPE_ArmorPhysical",
+  AttackCapabilities: "DOTA_UNIT_CAP_RANGED_ATTACK",
+  AttackDamageMin: "28",
+  AttackDamageMax: "34",
+  BaseAttackSpeed: "100",
+  AttackRate: "1.700000",
+  AttackAnimationPoint: "0.30000",
+  AttackAcquisitionRange: "800",
+  AttackRange: "500",
+  ProjectileModel: "particles/units/heroes/hero_wisp/wisp_base_attack.vpcf",
+  ProjectileSpeed: "1200",
+
+  // Attributes
+  //-------------------------------------------------------------------------------------------------------------
   AttributePrimary: "DOTA_ATTRIBUTE_STRENGTH",
-  AttributeBaseStrength: 25,
-  AttributeStrengthGain: 3.4,
-  AttributeBaseIntelligence: 18,
-  AttributeIntelligenceGain: 1.6,
-  AttributeBaseAgility: 20,
-  AttributeAgilityGain: 2.2,
-  StatusHealthRegen: 2.75,
-  MovementSpeed: 310,
-  MovementTurnRate: 0.6,
-  MovementSpeedActivityModifiers: {
-    jog: 0,
-    run: 340,
-  },
+  AttributeBaseStrength: "17",
+  AttributeStrengthGain: "3.000000",
+  AttributeBaseAgility: "14",
+  AttributeAgilityGain: "1.600000",
+  AttributeBaseIntelligence: "23",
+  AttributeIntelligenceGain: "1.700000",
+
+  // Bounty
+  //-------------------------------------------------------------------------------------------------------------
+  BountyXP: "62",
+  BountyGoldMin: "0",
+  BountyGoldMax: "0",
+
+  // Bounds
+  //-------------------------------------------------------------------------------------------------------------
   BoundsHullName: "DOTA_HULL_SIZE_HERO",
+  RingRadius: "70",
+
+  // Movement
+  //-------------------------------------------------------------------------------------------------------------
+  MovementCapabilities: "DOTA_UNIT_CAP_MOVE_GROUND",
+  MovementSpeed: "320",
+  MovementTurnRate: "0.700000",
+  HasAggressiveStance: "0",
+
+  // Status
+  //-------------------------------------------------------------------------------------------------------------
+  StatusHealth: "200",
+  StatusMana: "75",
+  StatusManaRegen: "0",
+
+  // Team
+  //-------------------------------------------------------------------------------------------------------------
+  TeamName: "DOTA_TEAM_GOODGUYS",
+  CombatClassAttack: "DOTA_COMBAT_CLASS_ATTACK_HERO",
+  CombatClassDefend: "DOTA_COMBAT_CLASS_DEFEND_HERO",
+  UnitRelationshipClass: "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO",
+
+  // Vision
+  //-------------------------------------------------------------------------------------------------------------
+  VisionDaytimeRange: "1800",
+  VisionNighttimeRange: "800",
+
+  // Inventory
+  //-------------------------------------------------------------------------------------------------------------
+  HasInventory: "1",
+
+  // Sound
+  //-------------------------------------------------------------------------------------------------------------
+  SoundSet: "Hero_Wisp",
+  VoiceBackgroundSound: "",
+  HealthBarOffset: "200",
+  IdleExpression: "scenes/default_idle.vcd",
+  IdleSoundLoop: "Hero_Wisp.IdleLoop",
+  HeroSelectSoundEffect: "Hero_Wisp.Pick",
+  GameSoundsFile: "soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts",
+  VoiceFile: "soundevents/voscripts/game_sounds_vo_wisp.vsndevts",
+
+  // Div
+  //-------------------------------------------------------------------------------------------------------------
+  ARDMDisabled: "0",
+  HUD: {
+    StatusHUD: {
+      StatusStrength: {
+        LocalizeToken: "#DOTA_StrengthStatus",
+        Parameters: "Traits:Strength",
+        HUDName: "unitstrength",
+      },
+      StatusAgility: {
+        LocalizeToken: "#DOTA_AgilityStatus",
+        Parameters: "Traits:Agility",
+        HUDName: "unitagility",
+      },
+      StatusIntellect: {
+        LocalizeToken: "#DOTA_IntellectStatus",
+        Parameters: "Traits:Intellect",
+        HUDName: "unitintellect",
+      },
+    },
+  },
+  particle_folder: "particles/units/heroes/hero_wisp",
+  RenderablePortrait: {},
+  precache: {
+    model: "models/development/invisiblebox.vmdl",
+  },
   ItemSlots: {
     0: {
-      SlotIndex: 0,
-      SlotName: "weapon",
-      SlotText: "#LoadoutSlot_Weapon",
-      TextureWidth: 256,
-      TextureHeight: 256,
-      MaxPolygonsLOD0: 2500,
-      MaxPolygonsLOD1: 1000,
-    },
-    1: {
-      SlotIndex: 1,
+      SlotIndex: "0",
       SlotName: "head",
       SlotText: "#LoadoutSlot_Head_Accessory",
-      TextureWidth: 512,
-      TextureHeight: 512,
-      MaxPolygonsLOD0: 3000,
-      MaxPolygonsLOD1: 1200,
+      TextureWidth: "256",
+      TextureHeight: "256",
+      MaxPolygonsLOD0: "2300",
+      MaxPolygonsLOD1: "2300",
     },
-    2: {
-      SlotIndex: 2,
-      SlotName: "armor",
-      SlotText: "#LoadoutSlot_Armor",
-      TextureWidth: 512,
-      TextureHeight: 512,
-      MaxPolygonsLOD0: 2000,
-      MaxPolygonsLOD1: 800,
-    },
-    3: {
-      SlotIndex: 3,
-      SlotName: "belt",
-      SlotText: "#LoadoutSlot_Belt",
-      TextureWidth: 256,
-      TextureHeight: 256,
-      MaxPolygonsLOD0: 1500,
-      MaxPolygonsLOD1: 600,
-    },
-    4: {
-      SlotIndex: 4,
+    1: {
+      SlotIndex: "1",
       SlotName: "taunt",
       SlotText: "#LoadoutSlot_Taunt",
     },
-    5: {
-      SlotIndex: 5,
-      SlotName: "misc",
-      SlotText: "#LoadoutSlot_Misc",
-      TextureWidth: 512,
-      TextureHeight: 512,
-      MaxPolygonsLOD0: 2000,
-      MaxPolygonsLOD1: 800,
-    },
-    6: {
-      SlotIndex: 6,
-      SlotName: "summon",
-      SlotText: "#LoadoutSlot_Pet",
-      ShowItemOnGeneratedUnits: 1,
-      GeneratesUnits: {
-        0: "npc_dota_companion",
-      },
-    },
-    7: {
-      SlotIndex: 7,
-      SlotName: "costume",
-      SlotText: "#LoadoutSlot_Costume",
-    },
-  },
-  particle_folder: "particles/units/heroes/hero_axe",
-  GameSoundsFile: "soundevents/game_sounds_heroes/game_sounds_axe.vsndevts",
-  VoiceFile: "soundevents/voscripts/game_sounds_vo_axe.vsndevts",
-  RenderablePortrait: {
-    Particles: {
-      "particles/units/heroes/hero_axe/axe_loadout.vpcf": "loadout",
+    2: {
+      SlotIndex: "2",
+      SlotName: "ambient_effects",
+      SlotText: "#LoadoutSlot_Ambient_Effects",
+      DisplayInLoadout: "0",
     },
   },
   Bot: {
-    SupportsEasyMode: 1,
-    Loadout: {
-      item_tango: ["ITEM_CONSUMABLE", "ITEM_SELLABLE"].join(" | "),
-      item_flask: ["ITEM_CONSUMABLE", "ITEM_SELLABLE"].join(" | "),
-      item_branches: ["ITEM_CORE", "ITEM_SELLABLE"].join(" | "),
-      item_boots: "ITEM_CORE",
-      item_wind_lace: "ITEM_CORE",
-      item_ring_of_regen: "ITEM_CORE",
-      item_recipe_tranquil_boots: "ITEM_DERIVED",
-      item_tranquil_boots: "ITEM_DERIVED",
-      item_blink: "ITEM_CORE",
-      item_recipe_blade_mail: "ITEM_CORE",
-      item_chainmail: "ITEM_CORE",
-      item_broadsword: "ITEM_CORE",
-      item_blade_mail: "ITEM_CORE | ITEM_DERIVED",
-      item_mithril_hammer: "ITEM_LUXURY",
-      item_ogre_axe: "ITEM_LUXURY",
-      item_recipe_black_king_bar: "ITEM_LUXURY",
-      item_black_king_bar: ["ITEM_LUXURY", "ITEM_DERIVED"].join(" | "),
-      //"item_ring_of_tarrasque": "ITEM_LUXURY"
-      item_reaver: "ITEM_LUXURY",
-      item_vitality_booster: "ITEM_LUXURY",
-      item_recipe_heart: "ITEM_LUXURY",
-      item_heart: "ITEM_DERIVED",
-      item_platemail: "ITEM_LUXURY",
-      item_mystic_staff: "ITEM_LUXURY",
-      item_recipe_shivas_guard: "ITEM_LUXURY",
-      item_shivas_guard: ["ITEM_LUXURY", "ITEM_DERIVED"].join(" | "),
-    },
-    Build: {
-      1: "axe_counter_helix",
-      2: "axe_berserkers_call",
-      3: "axe_counter_helix",
-      4: "axe_berserkers_call",
-      5: "axe_counter_helix",
-      6: "axe_culling_blade",
-      7: "axe_counter_helix",
-      8: "axe_berserkers_call",
-      9: "axe_berserkers_call",
-      10: "special_bonus_attack_speed_25",
-      11: "axe_battle_hunger",
-      12: "axe_culling_blade",
-      13: "axe_battle_hunger",
-      14: "axe_battle_hunger",
-      15: "special_bonus_hp_300",
-      16: "axe_battle_hunger",
-      17: "",
-      18: "axe_culling_blade",
-      19: "",
-      20: "special_bonus_hp_regen_20",
-      21: "",
-      22: "",
-      23: "",
-      24: "",
-      25: "special_bonus_unique_axe",
-    },
-    HeroType: ["DOTA_BOT_TANK", "DOTA_BOT_STUN_SUPPORT"].join(" | "),
+    HeroType: "DOTA_BOT_PURE_SUPPORT",
     LaningInfo: {
-      SoloDesire: 1,
-      RequiresBabysit: 0,
-      ProvidesBabysit: 1,
-      SurvivalRating: 2,
-      RequiresFarm: 1,
-      ProvidesSetup: 0,
-      RequiresSetup: 1,
+      SoloDesire: "0",
+      RequiresBabysit: "0",
+      ProvidesBabysit: "2",
+      SurvivalRating: "2",
+      RequiresFarm: "1",
+      ProvidesSetup: "0",
+      RequiresSetup: "2",
     },
   },
 };

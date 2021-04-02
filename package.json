@@ -40,6 +40,9 @@
     "dev:localizationCompilerWatcher": "tsc --project node_modules/~resource/tsconfig.json --watch",
     "dev:runlocalizationWatcher": "node node_modules/~generator/fsWatcher.js",
     "dev:jsKvTranspilator": "nodemon -w ./game/scripts -e .kv.js scripts/jsKvTranspilator.js ./game/scripts",
+    "valve-kv": "node ./valve-kv/valveKvHelper.js",
+    "valve-kv:kv-js": "node ./valve-kv/valveKvHelper.js kv-js",
+    "valve-kv:js-kv": "node ./valve-kv/valveKvHelper.js js-kv",
     "init": "link-module-alias && node node_modules/~generator/init.js",
     "release": "standard-version"
   },

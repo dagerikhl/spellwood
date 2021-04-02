@@ -25,6 +25,10 @@ panorama_debugger.cfg
 # Transpiled JS to KV files
 /game/scripts/**/*.txt
 
+# valve-kv helper
+/valve-kv/**/*
+!/valve-kv/valveKvHelper.js
+
 # Editors
 .idea/
 

@@ -7,15 +7,13 @@ const commandLineArgs = process.argv.slice(2);
 
 const addonName = getAddonName();
 
-// TODO This doesn't work as expected, I can't launche the map and the map is not automatically started
-
 (async () => {
   const dotaPath = await getDotaPath();
   const win64 = path.join(dotaPath, "game", "bin", "win64");
 
   /*
    You can add any arguments here.
-   E.g. `-dota_launch_custom_game ${getAddonName()} dota` would automatically load the "dota" map.
+   E.g. `+dota_launch_custom_game ${getAddonName()} dota` would automatically load the "dota" map.
    You can also add command line args when running the script.
    E.g. `yarn launch -language norwegian` would launch the game with norwegian localization.
    */
@@ -23,7 +21,7 @@ const addonName = getAddonName();
     "-novid",
     "-tools",
     `-addon ${addonName}`,
-    `-dota_launch_custom_game ${addonName} ${addonName}`,
+    `+dota_launch_custom_game ${addonName} ${addonName}`,
     ...commandLineArgs,
   ];
   console.log(`Launching game with args \`${args.join(" ")}\``);

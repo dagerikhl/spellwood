@@ -3,8 +3,11 @@
     "Language"    "english"
     "Tokens"
     {
+        "addon_game_name"    "Spellwood"
         "npc_dota_hero_wisp"    "TESTER"
-        "npc_dota_hero_warder"    "Warder"
+        "npc_dota_hero_wisp_npedesc1"    "TESTER HERO FOR SPELLWOOD"
+        "npc_dota_hero_antimage"    "Warder"
+        "npc_dota_hero_antimage_npedesc1"    "Etches ancient wards to augment his power or inscribe his surroundings with magic"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt"    "Custom Arcane Bolt"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_description"    "Custom version of Skywrath Mage's Arcane Bolt. Fires a tracking bolt at a target, doing %bolt_damage% + %int_multiplier%*Intelligence damage. Provides bonus vision around projectile."
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Lore"    "Legend has it it was coded late one night fueled by red wine."

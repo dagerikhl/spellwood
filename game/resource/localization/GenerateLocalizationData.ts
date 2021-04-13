@@ -12,7 +12,14 @@ import { Language } from "../languages";
 
 // Standard tooltips
 
-const standardTooltips: StandardLocalization[] = [
+const addonStandardTooltips: StandardLocalization[] = [
+  {
+    classname: "addon_game_name",
+    name: "Spellwood",
+  },
+];
+
+const testerStandardTooltips: StandardLocalization[] = [
   {
     classname: "npc_dota_hero_wisp",
     name: "TESTER",
@@ -24,7 +31,14 @@ const standardTooltips: StandardLocalization[] = [
     ],
   },
   {
-    classname: "npc_dota_hero_warder",
+    classname: "npc_dota_hero_wisp_npedesc1",
+    name: "TESTER HERO FOR SPELLWOOD",
+  },
+];
+
+const warderStandardTooltips: StandardLocalization[] = [
+  {
+    classname: "npc_dota_hero_antimage",
     name: "Warder",
     language_overrides: [
       {
@@ -33,6 +47,17 @@ const standardTooltips: StandardLocalization[] = [
       },
     ],
   },
+  {
+    classname: "npc_dota_hero_antimage_npedesc1",
+    // TODO Improve description
+    name: "Etches ancient wards to augment his power or inscribe his surroundings with magic",
+  },
+];
+
+const standardTooltips: StandardLocalization[] = [
+  ...addonStandardTooltips,
+  ...testerStandardTooltips,
+  ...warderStandardTooltips,
 ];
 
 // Ability tooltips

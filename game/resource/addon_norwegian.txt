@@ -3,8 +3,11 @@
     "Language"    "norwegian"
     "Tokens"
     {
+        "addon_game_name"    "Spellwood"
         "npc_dota_hero_wisp"    "TESTER"
-        "npc_dota_hero_warder"    "Runeskriver"
+        "npc_dota_hero_wisp_npedesc1"    "TESTER HERO FOR SPELLWOOD"
+        "npc_dota_hero_antimage"    "Runeskriver"
+        "npc_dota_hero_antimage_npedesc1"    "Etches ancient wards to augment his power or inscribe his surroundings with magic"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt"    "Egenlagd Arkan Bolt"
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_description"    "Egenlagd versjon av Skywrath Mage's Arkan Bolt. Skyter ut en sporende bolt mot et mål, som gjør %bolt_damage% + %int_multiplier%*Intelligens skade. Gir ekstra lys rundt prosjektilet."
         "DOTA_Tooltip_Ability_typescript_skywrath_mage_arcane_bolt_Lore"    "Det heter seg at denne ble kodet en sen kveld hjulpet av mye rødvin."

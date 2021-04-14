@@ -32,48 +32,42 @@
     "build": "run-p build:*",
     "build:panorama": "tsc --project content/panorama/scripts/custom_game/tsconfig.json",
     "build:vscripts": "tstl --project game/scripts/vscripts/tsconfig.json",
-    "build:jsKvTranspilator": "node scripts/jsKvTranspilator.js ./game/scripts",
+    "build:localization": "tsc --project game/resource/localization/tsconfig.json && node scripts/localizationGenerator.js",
+    "build:jsKv": "node scripts/jsKvTranspilator.js ./game/scripts",
     "dev": "run-p dev:*",
     "dev:panorama": "tsc --project content/panorama/scripts/custom_game/tsconfig.json --watch",
     "dev:vscripts": "tstl --project game/scripts/vscripts/tsconfig.json --watch",
-    "dev:localizationCompiler": "tsc --project node_modules/~resource/tsconfig.json",
-    "dev:localizationCompilerWatcher": "tsc --project node_modules/~resource/tsconfig.json --watch",
-    "dev:runlocalizationWatcher": "node node_modules/~generator/fsWatcher.js",
-    "dev:jsKvTranspilator": "nodemon -w ./game/scripts -e .kv.js scripts/jsKvTranspilator.js ./game/scripts",
-    "valve-kv": "node ./valve-kv/valveKvHelper.js",
-    "valve-kv:kv-js": "node ./valve-kv/valveKvHelper.js kv-js",
-    "valve-kv:js-kv": "node ./valve-kv/valveKvHelper.js js-kv",
-    "init": "link-module-alias && node node_modules/~generator/init.js",
+    "dev:localization-transpile": "tsc --project game/resource/localization/tsconfig.json --watch",
+    "dev:localization-generate": "nodemon -d 1 -w game/resource/localization -e .js scripts/localizationGenerator.js",
+    "dev:jsKv": "nodemon -w game/scripts -e .kv.js scripts/jsKvTranspilator.js game/scripts",
+    "valve-kv": "node valve-kv-helper/valveKvHelper.js",
+    "valve-kv:kv-js": "node valve-kv-helper/valveKvHelper.js kv-js",
+    "valve-kv:js-kv": "node valve-kv-helper/valveKvHelper.js js-kv",
     "release": "standard-version"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.0.1",
-    "@commitlint/config-conventional": "12.0.1",
-    "@moddota/dota-lua-types": "4.7.2",
-    "@moddota/panorama-types": "1.6.1",
-    "@shushishtok/tooltip_generator": "1.5.6",
-    "@types/node": "14.14.22",
+    "@commitlint/cli": "12.1.1",
+    "@commitlint/config-conventional": "12.1.1",
+    "@moddota/dota-lua-types": "4.9.0",
+    "@moddota/panorama-types": "1.8.0",
+    "@types/node": "14.14.37",
     "find-steam-app": "1.0.2",
-    "fs-extra": "9.0.0",
+    "fs-extra": "9.1.0",
     "husky": "5.2.0",
     "link-module-alias": "1.2.0",
     "node-watch": "0.7.1",
     "nodemon": "2.0.7",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
-    "standard-version": "9.1.1",
+    "standard-version": "9.2.0",
     "ts-node": "9.1.1",
-    "typescript": "3.9.3",
-    "typescript-to-lua": "0.34.0",
-    "valve-kv": "1.1.0"
+    "typescript": "4.2.4",
+    "typescript-to-lua": "0.39.2",
+    "valve-kv": "1.2.0"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "_moduleAliases": {
-    "~resource": "game/resource",
-    "~generator": "node_modules/@shushishtok/tooltip_generator"
   }
 }

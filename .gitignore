@@ -26,8 +26,8 @@ panorama_debugger.cfg
 /game/scripts/**/*.txt
 
 # valve-kv helper
-/valve-kv/**/*
-!/valve-kv/valveKvHelper.js
+/valve-kv-helper/**/*
+!/valve-kv-helper/valveKvHelper.js
 
 # Editors
 .idea/

@@ -92,6 +92,7 @@ module.exports = {
   DOTAUnits: {
     Version: 1,
 
+    // TODO Remove dummy unit
     npc_dummy_unit,
   },
 };

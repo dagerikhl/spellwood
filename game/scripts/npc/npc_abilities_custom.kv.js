@@ -124,6 +124,7 @@ const typescript_skywrath_mage_arcane_bolt = {
 
 module.exports = {
   DOTAAbilities: {
+    // TODO Remove examples
     meepo_earthbind_ts_example,
     typescript_skywrath_mage_arcane_bolt,
   },

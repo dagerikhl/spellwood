@@ -24,6 +24,12 @@ After you've followed these steps, and you want to use my repo, clone my repo in
    - I recommend Sublime Text for Key-Value text files.
      - Remember to install plugins to work with DotA KV files, I use dota_kv.
 
+## Development
+
+1. Run `yarn install`.
+2. Run `yarn dev` to start watching files, building and transpiling necessary `.ts` and `.kv.js` files to `.lua`, `.js`, and `.txt` files.
+3. Run `yarn launch` to start DotA 2 developer tools and launch the map.
+
 ## Release
 
 To release a new version, run the `yarn release` script, which will create a new release and update the changelog with any new conventional changelog valid commits (see [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)),

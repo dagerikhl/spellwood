@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/dagerikhl/spellwood/compare/v0.1.7...v0.1.8) (2021-04-16)
+
+
+### Features
+
+* **heroes:** add basic Io overriding TESTER hero ([cdeb526](https://github.com/dagerikhl/spellwood/commit/cdeb52668c4664c3a4b164dcf3bd9e31844c4dbf))
+* **heroes:** add description and polish heroes ([165aa48](https://github.com/dagerikhl/spellwood/commit/165aa485039b81c20f4907b610d42a7efd3146d3))
+* **tools:** implement my own tooltip generator to avoid buggy install ([8888ad6](https://github.com/dagerikhl/spellwood/commit/8888ad6a86991a75fca8c13dc4bde45cca3bd1fe))
+* **valve-kv:** add helper to serialize/deserialize kv files ([c5e9ea0](https://github.com/dagerikhl/spellwood/commit/c5e9ea04dac0f973d6afe8c92bb784f490569008))
+
+
+### Bug Fixes
+
+* **launch:** fix launch map directly command line arg from - to + ([ebc7311](https://github.com/dagerikhl/spellwood/commit/ebc7311f0d2a2ef331367abd45491bcd563b4cfc))
+* **localization:** move all localization into main file to make it work ([9a3fc36](https://github.com/dagerikhl/spellwood/commit/9a3fc3672129434439da9c5570f85c760278706b))
+
 ### [0.1.7](https://github.com/dagerikhl/spellwood/compare/v0.1.6...v0.1.7) (2021-03-29)
 
 

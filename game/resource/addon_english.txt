@@ -4,6 +4,7 @@
     "Tokens"
     {
         "addon_game_name"    "Spellwood"
+        "DOTA_CUSTOM1"    "Heroes of Spellwood"
         "npc_dota_hero_wisp"    "TESTER"
         "npc_dota_hero_wisp_npedesc1"    "TESTER HERO FOR SPELLWOOD"
         "npc_dota_hero_antimage"    "Warder"

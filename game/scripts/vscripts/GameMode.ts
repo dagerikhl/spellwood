@@ -1,8 +1,6 @@
 import { reloadable } from "./lib/tstl-utils";
 import "./modifiers/modifier_panic";
 
-const heroSelectionTime = 10;
-
 declare global {
   interface CDOTAGamerules {
     Addon: GameMode;
@@ -27,17 +25,34 @@ export class GameMode {
   }
 
   private configure(): void {
-    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
-    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 5);
+    // Players
+    GameRules.SetSafeToLeave(true);
 
+    // Teams
+    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 0);
+    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 0);
+    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.CUSTOM_1, 5);
+
+    // Hero selection
+    // GameRules.SetSameHeroSelectionEnabled(true);
+
+    // Times
+    // GameRules.SetCustomGameSetupTimeout(0);
+    // GameRules.SetCustomGameSetupAutoLaunchDelay(0);
+    GameRules.SetHeroSelectionTime(120);
+    GameRules.SetStrategyTime(0);
+    // TODO Use a longer time for production?
     GameRules.SetShowcaseTime(0);
-    GameRules.SetHeroSelectionTime(heroSelectionTime);
+    GameRules.SetPreGameTime(60);
+
+    // Shop
+    // GameRules.SetUseUniversalShopMode(true);
   }
 
   public OnStateChange(): void {
     const state = GameRules.State_Get();
 
-    // Add 4 bots to lobby in tools
+    // Add 1 bot to lobby in tools
     if (IsInToolsMode() && state == GameState.CUSTOM_GAME_SETUP) {
       for (let i = 0; i < 1; i++) {
         Tutorial.AddBot("npc_dota_hero_lina", "", "", false);
@@ -64,20 +79,23 @@ export class GameMode {
   }
 
   private OnNpcSpawned(event: NpcSpawnedEvent) {
-    // After a hero unit spawns, apply modifier_panic for 8 seconds
-    const unit = EntIndexToHScript(event.entindex) as CDOTA_BaseNPC; // Cast to npc since this is the 'npc_spawned' event
-    // if (unit.IsRealHero()) {
-    Timers.CreateTimer(1, () => {
-      unit.AddNewModifier(unit, undefined, "modifier_panic", { duration: 5 });
-    });
+    // Add examples if in tools
+    if (IsInToolsMode()) {
+      // After a hero unit spawns, apply modifier_panic for 8 seconds
+      const unit = EntIndexToHScript(event.entindex) as CDOTA_BaseNPC; // Cast to npc since this is the 'npc_spawned' event
+      // if (unit.IsRealHero()) {
+      Timers.CreateTimer(1, () => {
+        unit.AddNewModifier(unit, undefined, "modifier_panic", { duration: 5 });
+      });
 
-    // if (!unit.HasAbility("meepo_earthbind_ts_example")) {
-    //   // Add lua ability to the unit
-    //   unit.AddAbility("meepo_earthbind_ts_example");
-    // }
-    if (!unit.HasAbility("typescript_skywrath_mage_arcane_bolt")) {
-      unit.AddAbility("typescript_skywrath_mage_arcane_bolt");
+      // if (!unit.HasAbility("meepo_earthbind_ts_example")) {
+      //   // Add lua ability to the unit
+      //   unit.AddAbility("meepo_earthbind_ts_example");
+      // }
+      if (!unit.HasAbility("typescript_skywrath_mage_arcane_bolt")) {
+        unit.AddAbility("typescript_skywrath_mage_arcane_bolt");
+      }
+      // }
     }
-    // }
   }
 }

@@ -193,7 +193,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/node@14.14.37", "@types/node@^14.14.21":
+"@types/node@^14.14.21":
   version "14.14.37"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.37.tgz#a3dd8da4eb84a996c36e331df98d82abd76b516e"
   integrity sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
@@ -1616,9 +1616,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lua-types@^2.8.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/lua-types/-/lua-types-2.10.0.tgz#b03aece4c599d3cbc18d1fd7c6624dcfee5b3fa4"
-  integrity sha512-RwWtvZmOmgMPMaDsmgBn9pLL1OjRMPacO4i2VaQrkXOS/p6Joi9JkHJZ1+6v8vaNDStl9XOvBcpRaw5RMYo+Ig==
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/lua-types/-/lua-types-2.10.1.tgz#e8d0c63bd5ab72351a30afd3b6b08319aca074a3"
+  integrity sha512-Ai7L25I5kHZYGN5C3LALUse7Eus0k/kM9tEO2zwReG2Xuker0c+0e2M4iyfiEvlGOmBc7cDouqJ5lFwyg8JqiQ==
   dependencies:
     typescript-to-lua "^0.39.0"
 

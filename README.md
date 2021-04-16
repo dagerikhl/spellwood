@@ -24,6 +24,10 @@ After you've followed these steps, and you want to use my repo, clone my repo in
    - I recommend Sublime Text for Key-Value text files.
      - Remember to install plugins to work with DotA KV files, I use dota_kv.
 
+## Release
+
+To release a new version, run the `yarn release` script, which will create a new release and update the changelog with any new conventional changelog valid commits (see [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)),
+
 ## Contributors
 
 - Spellwood author: [dagerikhl](https://github.com/dagerikhl)

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/dagerikhl/spellwood/compare/v0.1.8...v0.1.9) (2021-04-17)
+
+
+### Features
+
+* **gamemode:** add more init rules ([9a0246b](https://github.com/dagerikhl/spellwood/commit/9a0246be3b645bbe3acb8f877afb79c18d67ac48))
+* **gamemode:** add more init variables ([27d7385](https://github.com/dagerikhl/spellwood/commit/27d7385af58ffa15fc2437b408b4374d897df5ab))
+
+
+### Bug Fixes
+
+* **lib:** fix wrong accessor for fileName in register modifier ([5a35ab4](https://github.com/dagerikhl/spellwood/commit/5a35ab425dab0b508b6376e83836972ff2a4e470))
+
 ### [0.1.8](https://github.com/dagerikhl/spellwood/compare/v0.1.7...v0.1.8) (2021-04-16)
 
 

@@ -29,6 +29,7 @@
   "scripts": {
     "postinstall": "node scripts/install.js",
     "prepare": "husky install",
+    "cm": "cz",
     "launch": "node scripts/launch.js",
     "build": "run-p build:*",
     "build:panorama": "tsc --project content/panorama/scripts/custom_game/tsconfig.json",
@@ -51,6 +52,8 @@
     "@commitlint/config-conventional": "12.1.1",
     "@moddota/dota-lua-types": "4.9.0",
     "@moddota/panorama-types": "1.8.0",
+    "commitizen": "4.2.3",
+    "cz-conventional-changelog": "3.3.0",
     "find-steam-app": "1.0.2",
     "fs-extra": "9.1.0",
     "husky": "6.0.0",

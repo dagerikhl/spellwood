@@ -1,4 +1,4 @@
-# Spellwood
+# Spellwood [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 DotA 2 hero defence mod
 
@@ -26,9 +26,15 @@ After you've followed these steps, and you want to use my repo, clone my repo in
 
 ## Development
 
+### Getting started
+
 1. Run `yarn install`.
 2. Run `yarn dev` to start watching files, building and transpiling necessary `.ts` and `.kv.js` files to `.lua`, `.js`, and `.txt` files.
 3. Run `yarn launch` to start DotA 2 developer tools and launch the map.
+
+### Commiting
+
+This repo uses commitizen to commit conventional changelog valid commits. So to commit, _don't_ use `git commit`, use `yarn cm` or `git cz` instead.
 
 ## Release
 

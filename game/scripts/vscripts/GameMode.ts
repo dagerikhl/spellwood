@@ -1,6 +1,9 @@
 import { reloadable } from "./lib/tstl-utils";
 import "./modifiers/modifier_panic";
 
+// TODO 1: Continue on global settings in init game mode
+// TODO 2: Extract my helpers to their own NPM packages
+
 declare global {
   interface CDOTAGamerules {
     Addon: GameMode;
@@ -41,7 +44,6 @@ export class GameMode {
     // GameRules.SetCustomGameSetupAutoLaunchDelay(0);
     GameRules.SetHeroSelectionTime(120);
     GameRules.SetStrategyTime(0);
-    // TODO Use a longer time for production?
     GameRules.SetShowcaseTime(0);
     GameRules.SetPreGameTime(60);
 
@@ -67,6 +69,7 @@ export class GameMode {
 
   private StartGame(): void {
     print("Game starting!");
+    print(`Difficuly: ${GameRules.GetCustomGameDifficulty()}`);
 
     // Do some stuff here
   }

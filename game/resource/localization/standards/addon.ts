@@ -9,4 +9,13 @@ export const addon: StandardLocalization[] = [
     classname: "DOTA_CUSTOM1",
     name: "Heroes of Spellwood",
   },
+
+  {
+    classname: "dota_game_end_victory_title_radiant",
+    name: "The Heroes of Spellwood are triumphant!",
+  },
+  {
+    classname: "dota_game_end_victory_title_dire",
+    name: "The Heroes of Spellwood are defeated.",
+  },
 ];

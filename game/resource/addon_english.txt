@@ -4,7 +4,7 @@
     "Tokens"
     {
         "addon_game_name"    "Spellwood"
-        "DOTA_CUSTOM1"    "Heroes of Spellwood"
+        "DOTA_GoodGuys"    "Heroes of Spellwood"
         "dota_game_end_victory_title_radiant"    "The Heroes of Spellwood are triumphant!"
         "dota_game_end_victory_title_dire"    "The Heroes of Spellwood are defeated."
         "npc_dota_hero_wisp"    "TESTER"

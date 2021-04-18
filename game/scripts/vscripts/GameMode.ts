@@ -32,9 +32,8 @@ export class GameMode {
     GameRules.SetSafeToLeave(true);
 
     // Teams
-    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 0);
+    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
     GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 0);
-    GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.CUSTOM_1, 5);
 
     // Hero selection
     // GameRules.SetSameHeroSelectionEnabled(true);

@@ -5,8 +5,9 @@ export const addon: StandardLocalization[] = [
     classname: "addon_game_name",
     name: "Spellwood",
   },
+
   {
-    classname: "DOTA_CUSTOM1",
+    classname: "DOTA_GoodGuys",
     name: "Heroes of Spellwood",
   },
 
